@@ -1,0 +1,110 @@
+package Beans;
+
+import java.io.Serializable;
+
+public class Item implements Serializable
+{
+	private static final long serialVersionUID = -1741160023680137936L;
+	
+	private int itemID;
+	private String itemName;
+	private String itemURL;
+	private String itemPrice;
+	private int itemStock;
+	private String itemDescription;
+	
+	public int GetItemID()
+	{
+		return itemID;
+	}
+	
+	public void SetItemID(int id)
+	{
+		if(id >= 0)
+		{
+			this.itemID = id;
+		}
+	}
+	
+	public String GetItemName()
+	{
+		if(itemName != null)
+		{
+			return itemName;
+		}
+		else
+		{
+			itemName = "Empty";
+			return itemName;
+		}
+	}
+	
+	public void SetItemName(String name)
+	{
+		if(name != null)
+		{
+			this.itemName = name;
+		}
+	}
+	
+	public String GetItemURL()
+	{
+		if(itemURL != null)
+		{
+			return itemURL;
+		}
+		else
+		{
+			itemURL = "Empty";
+			return itemURL;
+		}
+		
+	}
+	
+	public void SetItemURL(String url)
+	{
+		this.itemURL = url;
+	}
+	
+	public String GetItemPrice()
+	{
+		if(itemPrice != null)
+		{
+			return itemPrice;
+		}
+		else
+		{
+			itemPrice = "Empty";
+			return itemPrice;
+		}
+		
+	}
+	
+	public void SetItemPrice(String price)
+	{
+		this.itemPrice = price;
+	}
+	
+	public int GetItemStock()
+	{
+		return itemStock;		
+	}
+	
+	public void SetItemStock(int numberOfItems)
+	{
+		if(numberOfItems >= 0)
+		{
+			this.itemStock = numberOfItems;
+		}	
+	}
+	
+	public void SetItemDescription(String newDescription)
+	{
+		this.itemDescription = newDescription;
+	}
+	
+	public String GetItemDescription()
+	{
+		return itemDescription;
+	}
+}
