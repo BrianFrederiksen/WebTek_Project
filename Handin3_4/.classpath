@@ -21,7 +21,5 @@
 	</classpathentry>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/javax.faces.jar"/>
 	<classpathentry exported="true" kind="lib" path="WebContent/WEB-INF/lib/jdom-2.0.5.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/javax.faces.jar"/>
-	<classpathentry kind="lib" path="WebContent/WEB-INF/lib/jdom-2.0.5.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
